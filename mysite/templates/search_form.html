@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Books</title>
+</head>
+<body>
+	<p>Searching Books :: <strong>{{ query }}</strong></p>
+	<!--{% if error %}
+	<p style="color: red;">Please submit a search term.</p>
+	{% elif error %}
+	<p style="color: red">Please submit a search with less than 20 characters</p>
+	{% endif %}-->
+	{% if error %}
+
+	<ul>
+		{% for e in error %}
+		<li>
+			<p style="color: red">{{ error }} </p>
+		</li>
+		{% endfor %}
+	</ul>
+
+	{% endif %}
+
+	<form action="/search/" method="get">
+		<input type="text" name="q">
+		<input type="submit" value="Search">
+	</form>
+
+</body>
+</html>
