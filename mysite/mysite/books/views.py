@@ -55,6 +55,6 @@ def author_list(request):
 	# Accessing foreign Key Values
 	# b1.publishers.website # Put it in the template
 	# Accessing foreign Key in reverse
-	p = Publisher.objects.get(name='Desh')
+	p = Publisher.objects.get(name='Amazon')
 	p.book_set.all()
 	return render_to_response('author_list.html', {'authors': authors, 'books': books, 'a':a, 'b1':b1, 'p':p})

@@ -7,7 +7,7 @@
 	<p>All Users</p>
 	<ul>
 		{% for u in users %}
-		<li>{{ u }} : First-Name: {{ u.first_name }} - Last-Name: {{ u.last_name }} - Email: {{ u.email }} - User is_Staff: {{ u.is_staff }} - User is_active: {{ is_active }}</li>
+		<li>{{ u }} : First-Name: {{ u.first_name }} - Last-Name: {{ u.last_name }} - Email: {{ u.email }} - User is_Staff: {{ u.is_staff }}</li>
 		{% endfor %}
 	</ul>
 	<!-- <p>All Admin Users</p>

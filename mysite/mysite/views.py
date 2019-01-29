@@ -15,8 +15,8 @@ def display_meta(request):
 	template = get_template('meta.html')
 	return HttpResponse(template.render(values))
 
-def hello(request):
-	return HttpResponse("Hello World")
+def platformsh(request):
+	return HttpResponse("Hello Platformsh")
 
 def current_datetime(request):
 	now = datetime.datetime.now()
