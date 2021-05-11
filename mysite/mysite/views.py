@@ -15,14 +15,14 @@ def display_meta(request):
 	template = get_template('meta.html')
 	return HttpResponse(template.render(values))
 
-def platformsh(request):
-	return HttpResponse("Hello Platformsh")
+# def platformsh(request):
+# 	return HttpResponse("Hello Platformsh")
 
-def current_datetime(request):
-	now = datetime.datetime.now()
-	template = get_template('current_datetime.html')
-	html = {'current_date': now}
-	return HttpResponse(template.render(html))
+# def current_datetime(request):
+# 	now = datetime.datetime.now()
+# 	template = get_template('current_datetime.html')
+# 	html = {'current_date': now}
+# 	return HttpResponse(template.render(html))
 
 def hours_ahead(request, offset):
 	try:

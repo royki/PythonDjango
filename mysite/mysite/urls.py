@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from mysite.views import dev, platformsh, current_datetime, hours_ahead, display_meta, contact, users_list, view_1, view_2
+from mysite.views import dev, hours_ahead, display_meta, contact, users_list, view_1, view_2
 from django.contrib.auth.views import login, logout
 from mysite.books import views
 
@@ -23,7 +23,7 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^time/$', current_datetime, name='current_time'),
+    # url(r'^time/$', current_datetime, name='current_time'),
     url(r'^time/plus/(\d{1,2})/$', hours_ahead, name='ahead_time'),
     url(r'^meta/$', display_meta),
     url(r'^contact',contact),
@@ -35,6 +35,6 @@ urlpatterns = [
     # url(r'^account/login/$', login),
     # url(r'^account/logout/$', logout),
     url(r'^users$', users_list),
-    url(r'^',platformsh),
+    # url(r'^',platformsh),
 ]
 
