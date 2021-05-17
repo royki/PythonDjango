@@ -1,5 +1,6 @@
 #### _Platform_
 --------------
 - Python v3.6
-
-- Coursera Python Course
+- Flask
+  - `export FLASK_APP=app.py FLASK_ENV=development` 
+  - `flask run`
