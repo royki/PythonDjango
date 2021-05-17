@@ -2,5 +2,5 @@
 --------------
 - Python v3.6
 - Flask
-  - `export FLASK_APP=app.py FLASK_ENV=development` 
+  - `export FLASK_APP=productlist.py FLASK_ENV=development` 
   - `flask run`
